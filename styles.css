@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+    background-color: white;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: gray;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    background-color: gray;
+    color: white;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.header nav ul {
+    list-style-type: none;
+    background-color: gray;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.header nav ul li a{
+    color: white;
+    background-color: gray;
+}
+
+.AboutMeSection {
+    display:flex;
+    height: 200px;
+    width: 100%;
+    border: 5px solid gray;
+}
+
+.AboutMeAside {
+    border-right: 5px solid gray;
+    padding-right: 10px;
+    width: 20%;
+    
+}
+
+.AboutMeAside h2 {
+    flex: 1;
+    font-size: 36px;
+    color: gray;
+    width: 40%;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    justify-content: right;
+}
+
+.AboutMe {
+    width: 70%;
+    background-color: white;
+    border-right: 5px solid gray;
+}
+
+.AboutMe p {
+    font-size: 26px;
+    color: gray;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+    flex: 0 2 400px;
+}
+
+.MePhoto {
+    align-items: center;
+    padding-left: 5px;
+}
+
+.MePhoto img {
+    width: 100%;
+    height: 100%;
+}
+
+.WorkSection01 {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border: 5px solid gray;
+}
+
+.WorkSection02 {
+    display:flex;
+    flex-wrap: wrap;
+  /*  margin-top: 2%; */
+    border: 5px solid gray;
+}
+
+.WorkAside {
+    border-right: 5px solid gray;
+    padding-right: 10px;
+    width: 20%;
+}
+
+.WorkContents01 {
+    width: 60%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.WorkContents02 {
+    width: 100%;
+    flex: 4;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WorkAside h2 {
+    font-size: 36px;
+    color: gray;
+    width: 40px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    justify-content: right;
+}
+
+
+.work01 {
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    border-radius: 10px;
+  /*  flex: 0 2 600px; */
+}
+
+.work01 img {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.work {
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    border-radius: 10px;
+    flex: 0 2 400px;
+}
+
+.work img {
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+h3 {
+    font-size: 22px;
+    color: white;
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: gray;
+    height: 40px;
+}
+
+.ContactMeSection {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border: 5px solid gray;
+}
+
+.ContactMeAside {
+    border-right: 5px solid gray;
+    padding-right: 10px;
+    width: 20%;
+    display: inline-block;
+    height: 100%;
+}
+
+.ContactMeAside h2 {
+    font-size: 36px;
+    color: gray;
+    width: 40px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    justify-content: right;
+}
+
+.ContactMeDiv {
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display:inline-block;
+    width: 80%;
+}
+
+.ContactMeDiv ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.ContactMeDiv > ul > li {
+    font-size: 20px;
+    color: gray;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-top: 20px;
+    border-bottom: 2px solid gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
+
+
